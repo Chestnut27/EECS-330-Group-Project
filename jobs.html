@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="finalproject.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
   </header>
 
 
@@ -15,7 +17,9 @@
 
 
     <div class="header-bar">
+      <button class="homebutton" onclick="revertJobType()">
       <h1 id="title">Former Felon Help</h1> 
+    </button>
     </div>
     <table class="filter-bar" align="center" style="width:75%;height:10px">
       <tr>
@@ -62,7 +66,7 @@
   <table align="center" style="width:7%;height:100%">
     <td>
       <div class="drop-down">
-        <select id="education-select">
+        <select id="educationTypeSelect">
           <option value="education">Education</option>
           <option value="option_1">Some High School</option>
           <option value="option_2">High School Diploma</option>
@@ -84,53 +88,53 @@
 
 
 
-  <div id="Construction" class="job">
+  <div id="Construction" class="job highschool">
     <div class="Title">Construction Job</div>
-    <div class="Description">This is a job in construction</div>
+    <div class="Description">Responsible for assisting tradesman on construction sites such as carpenters, bricklayers, demolition experts, drywallers, cement finishers, and roofers. Unloads and loads materials, erects concrete forms and ramps, mix and pour materials such as concrete, and assists in drilling and blasting.</div>
     <div class="Location">60201</div>
     <div class="Education">Some High School</div>
   </div>
-  <div id="Manufacturing" class="job">
-    <div class="Title">Manufacturing Job</div>
-    <div class="Description">This is a job in manufacturing</div>
+  <div id="Manufacturing" class="job diploma">
+    <div class="Title">Manufacturing Production Technician</div>
+    <div class="Description">1) Test products or subassemblies for functionality or quality. 2) Troubleshoot problems with equipment, devices, or products. ... 5) Monitor and adjust production processes or equipment for quality and productivity.</div>
     <div class="Location">60091</div>
     <div class="Education">High School Diploma</div>
   </div>
-  <div id="Transportation" class="job">
-    <div class="Title">Transportation Job</div>
-    <div class=" Description">This is a job in transportation</div>
+  <div id="Transportation" class="job highschool">
+    <div class="Title">Trucking</div>
+    <div class=" Description">Driving the vehicle is the main responsibility of the commercial truck driver, but some also need to load and unload cargo. Long-haul truck drivers must maintain a logbook of their driving activities to ensure compliance with federal regulations governing the rest and work periods for operators. Drivers also keep a record of vehicle inspections and make sure the truck is equipped with safety equipment, such as hazardous material placards. Some long-haul truck drivers plan their route according to a delivery schedule. Local-delivery drivers may be required to sell products or services to stores and businesses on their route, obtain signatures from recipients and collect cash.</div>
     <div class="Location">12345</div>
-    <div class="Education">College Degree</div>
+    <div class="Education">Some High School</div>
   </div>
-  <div id="CustomerServices" class="job">
+  <div id="CustomerServices" class="job diploma">
     <div class="Title">Customer Service Job</div>
     <div class="Description">This is a job in a shop</div>
     <div class="Location">60091</div>
     <div class="Education">High School Diploma</div>
   </div>
-  <div id="FoodServices" class="job">
+  <div id="FoodServices" class="job highschool">
     <div class="Title">Food Service Job</div>
     <div class="Description">This is a job in a restraunt</div>
     <div class="Location">60091</div>
-    <div class="Education">Some high school</div>
+    <div class="Education">Some High School</div>
   </div>
-  <div id="Maintenance" class="job">
+  <div id="Maintenance" class="job diploma">
     <div class="Title">Maintenance Job</div>
     <div class="Description">This is a job fixing things</div>
     <div class="Location">60091</div>
     <div class="Education">High School Diploma</div>
   </div>
-  <div id="OnlineEmployment" class="job">
+  <div id="OnlineEmployment" class="job diploma">
     <div class="Title">Online Job</div>
     <div class="Description">This is a job in online</div>
     <div class="Location">60091</div>
     <div class="Education">High School Diploma</div>
   </div>
-<div id="OfficeWork" class="job">
+<div id="OfficeWork" class="job college">
   <div class="Title">Office Job</div>
     <div class="Description">This is a job in a office</div>
     <div class="Location">60091</div>
-    <div class="Education">Some college</div>
+    <div class="Education">Some College</div>
   </div>
 
 
