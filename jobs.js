@@ -62,8 +62,6 @@ jobTypeSelect.onchange = function() {
   }
 }
 
-
-
 function removeZipFilter(){
   document.getElementById("zip-input").value = "";
 }
@@ -98,3 +96,23 @@ function revertJobType() {
 function removeEducationFilter() {
   document.getElementById("education-select").value = "education";
 }
+
+var educationTypeSelect = document.getElementById("educationTypeSelect");
+
+educationTypeSelect.onchange = function() {
+  if (educationTypeSelect.value === "education") {
+  revertEducationType();
+  }
+  else if (educationTypeSelect.value === "option_1") {
+    removeEducationFilter();
+    document.getElementById("highschool").style.display="block";
+  }
+  else if (educationTypeSelect.value === "option_2") {
+    removeEducationFilter();
+    document.getElementById("diploma").style.display="block";
+  }
+  else if (educationTypeSelect.value === "option_3") {
+    removeEducationFilter();
+    document.getElementById("college").style.display="block";
+}
+
