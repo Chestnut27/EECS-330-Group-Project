@@ -1,9 +1,22 @@
 
 
 html {
-  background: #BFDFFF; /* for browsers that do not support gradients */
-  background: linear-gradient(rgba(191, 223, 255,1), rgba(86, 181, 221,1)) no-repeat center center fixed; /*Standard*/
-  background-size: cover;
+  /*background: #BFDFFF;*/ /* for browsers that do not support gradients */
+  /*background: linear-gradient(rgba(191, 223, 255,1), rgba(86, 181, 221,1)) no-repeat center center fixed; 
+  background-size: cover;*/
+/*background-image:url(dust_scratches.png);*/
+background-image:url(light_grey.png);
+}
+
+
+.homebutton{
+  background: none !important;
+    color: inherit;
+    border: none;
+    padding-top: 20px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit !important;
 
 }
 
@@ -37,9 +50,12 @@ body {
 }
 
 .removebutton{
-  border-radius: 3px;
+  /*border-radius: 8px;
   padding: 5px px;
-  font-size: 22px;
+  font-size: 22px;*/
+  background-color: white;
+  border-width:1px;
+  border-color:lightgray;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -58,11 +74,13 @@ body {
 
 .drop-down select {
   background-color: white;
+
   color: black;
   font-size: inherit;
   padding: .5em;
   padding-right: 2.5em; 
-  border: 0;
+  border-width: 1px;
+  border-color:lightgray;
   margin: 0;
   border-radius: 2.5px;
   text-indent: 0.01px;
@@ -103,6 +121,8 @@ body {
   height: 35px;
   width: 210px;
   font-size: inherit;
+  border-width: 1px;
+  border-color:lightgray;
 }
 
 #myUL {
@@ -135,23 +155,31 @@ body {
   padding-top:10px;
   padding-bottom:10px;
   padding-left:20px;
-  width:80%;
+  width:70%;
   margin: auto;
   margin-top:30px;
   background-color:white;
   border-style:solid;
+  border-width: 1px;
+  border-color:lightgray;
+  border-radius: 10px;
+  /*
+  border-style:solid;
   border-width:5px;
   border-color:#335C81;
-  font-family: "Verdana";
+  */
+  font-family: "Open Sans";
   /*display: none;*/
 }
 .Title{
   font-size:30px;
+  font-family: "Bitter";
 }
 .Description{
   
-  font-size:20px;
+  font-size:16px;
   margin-bottom:20px;
+  padding: 3px;
 
 }
 .Location{
