@@ -1,0 +1,94 @@
+html {
+background-color:#E7E6F7;
+}
+
+.spacing {
+  height: 100px;
+}
+
+.homebutton{
+  background: none !important;
+    color: inherit;
+    border: none;
+    padding-top: 0px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit !important;
+    font-family: 'Kameron', sans-serif;
+
+}
+
+.header-bar-cont {
+  width:100%;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  font-family: 'Kameron', sans-serif;
+}
+
+.header-bar {
+  height: 10%;
+  width: 100%;
+  background-color: #2191FB;
+  color:white;
+  display: table;
+  margin: 0px auto;
+  font-family: 'Kameron', sans-serif;
+}
+
+#title {
+  margin: 0px;
+  padding: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  left: 40px;
+  font-size: 40px;
+  font-family: 'Kameron', sans-serif;
+  line-height: 70px;
+  color: #E7E6F7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+.box{
+	padding-top:10px;
+  padding-bottom:10px;
+  width:40%;
+  margin: auto;
+  margin-top:15px;
+  margin-bottom: 15px;
+  background-color:white;
+  border-style:solid;
+  border-width: 1.5px;
+  border-color:lightgray;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  display: inline-block;
+  margin-left:5%;
+}
+
+.box-container{
+	margin-left:5%;
+  margin-right:0%;
+}
+
+
+.resourcetitle{
+	margin:15px;
+	margin-top: 5px;
+	font-family: "bitter";
+	font-size: 25px;
+	font-weight: bold;
+}
+
