@@ -1,13 +1,30 @@
-
-
 html {
-  /*background: #BFDFFF;*/ /* for browsers that do not support gradients */
-  /*background: linear-gradient(rgba(191, 223, 255,1), rgba(86, 181, 221,1)) no-repeat center center fixed; 
-  background-size: cover;*/
-/*background-image:url(dust_scratches.png);*/
-background-image:url(light_grey.png);
+  background-color: #E7E6F7;
+  
 }
 
+.sidenav{
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+margin-top: 75px;
+  overflow-x: hidden;
+  /*background-color: #E7E6F7;*/
+  border-right-style:solid;
+  border-right-color: lightgray;
+  border-right-width: 1.5px;
+  padding: 0px;
+  /*margin: 5% auto;
+ vertical-align: center;
+  align-items: center;
+  justify-content: center;*/
+
+}
+
+.main{
+  margin-left:250px;
+}
 
 .homebutton{
   background: none !important;
@@ -17,6 +34,7 @@ background-image:url(light_grey.png);
     font: inherit;
     cursor: pointer;
     outline: inherit !important;
+    font-family: 'Kameron', sans-serif;
 
 }
 
@@ -25,28 +43,32 @@ background-image:url(light_grey.png);
   position: fixed;
   top: 0px;
   background-color: white;
-  border-style: solid;
+  font-family: 'Kameron', sans-serif;
+  /*border-style: solid;
   border-width: 1px;
-  border-color: black;
+  border-color: black;*/
 }
 
 .header-bar {
-  height: 70px;
+  height: 10%;
   width: 100%;
   /*background-color: #273043;*/
-  color: #1B2845;
+  background-color: #2191FB;
+  color:white;
+  /*color: #1B2845;*/
   display: table;
   margin: 0px auto;
+  font-family: 'Kameron', sans-serif;
   /*background: #1B2845;*/
-  background-image:url(headerchoice.png);
-  border-style:solid;
+  /*background-image:url(headerchoice.png);*/
+  /*border-style:solid;
   border-width:1px;
   border-color:black;
   /*border-color:#335C81;*/
 }
 
 .spacing {
-  height: 135px;
+  height: 80px;
 }
 
 body {
@@ -62,14 +84,12 @@ body {
   position: relative;
   left: 40px;
   font-size: 40px;
-  font-family: Century;
+  font-family: 'Kameron', sans-serif;
   line-height: 70px;
+  color: #E7E6F7;
 }
-
+/*
 .removebutton{
-  /*border-radius: 8px;
-  padding: 5px px;
-  font-size: 22px;*/
   background-color: white;
   border-width:1px;
   border-color:lightgray;
@@ -79,36 +99,45 @@ body {
   border-radius: 5px;
   height: 35px;
 }
+*/
+
+/*.filters{
+  float: left;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+*/
 
 .drop-down {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   font-family: "Open Sans" Sans-serif;
+  margin: 10% auto;
 }
-/*
-.filter-bar{
-  background-color: black;
-}*/
+
 .filters{
-  font-family: Avenir;
+  margin: 25% auto;
 }
 
 .drop-down select {
   background-color: white;
-
+height: 35px;
+  width: 210px;
   color: black;
   font-size: inherit;
   padding: .5em;
   padding-right: 2.5em; 
   border-width: 1px;
   border-color:lightgray;
-  margin: 0;
+  margin-top: 25px;
   border-radius: 2.5px;
   text-indent: 0.01px;
   text-overflow: '';
   -webkit-appearance: button; 
-  
+  margin-left:8%;
 }
 
 .drop-down::after {
@@ -123,10 +152,13 @@ body {
   height: 1em;
   font-size: .625em;
   line-height: 1;
-  right: 1.2em;
+  right: -.4em;
   top: 50%;
-  margin-top: -.5em;
+  margin-top: .65em;
 }
+
+
+
 
 .drop-down::before { /*  Custom dropdown arrow cover */
   width: 2em;
@@ -146,6 +178,8 @@ body {
   border-width: 1px;
   border-color:lightgray;
   border-radius: 4px;
+  margin: 10% auto;
+  margin-left:8%;
 }
 
 #myUL {
@@ -171,28 +205,20 @@ body {
 }
 
 
-
-
-.job{
-  
+.job{  
   padding-top:10px;
   padding-bottom:10px;
   padding-left:20px;
-  width:70%;
+  width:85%;
   margin: auto;
-  margin-top:30px;
+  margin-top:15px;
+  margin-bottom: 15px;
   background-color:white;
   border-style:solid;
-  border-width: 1px;
+  border-width: 1.5px;
   border-color:lightgray;
   border-radius: 10px;
-  /*
-  border-style:solid;
-  border-width:5px;
-  border-color:#335C81;
-  */
   font-family: "Open Sans";
-  /*display: none;*/
 }
 .Title{
   font-size:30px;
@@ -200,20 +226,15 @@ body {
   padding-bottom: 2px;
   display:inline-block;
 }
-.Description{
-  
+.Description{  
   font-size:16px;
   margin-bottom:15px;
   padding: 3px;
-
 }
 .Location{
   font-family: "Bitter";
   font-size:20px;
   display:inline-block;
-  /*padding-right:10px;
-  padding-left: 3px;
-  padding-bottom: 10px;*/
   padding-right:20px;
   float:right;
   line-height: 30px;
