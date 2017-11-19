@@ -88,27 +88,7 @@ body {
   line-height: 70px;
   color: #E7E6F7;
 }
-/*
-.removebutton{
-  background-color: white;
-  border-width:1px;
-  border-color:lightgray;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  border-radius: 5px;
-  height: 35px;
-}
-*/
 
-/*.filters{
-  float: left;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-}
-*/
 
 .drop-down {
   position: relative;
@@ -133,7 +113,7 @@ height: 35px;
   border-width: 1px;
   border-color:lightgray;
   margin-top: 25px;
-  border-radius: 2.5px;
+  border-radius: 10px;
   text-indent: 0.01px;
   text-overflow: '';
   -webkit-appearance: button; 
@@ -177,32 +157,11 @@ height: 35px;
   font-size: inherit;
   border-width: 1px;
   border-color:lightgray;
-  border-radius: 4px;
+  border-radius: 10px;
   margin: 10% auto;
   margin-left:8%;
 }
 
-#myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-}
-
-#myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-}
 
 
 .job{  
