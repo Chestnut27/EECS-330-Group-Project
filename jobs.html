@@ -9,9 +9,10 @@
   <link rel="stylesheet" type="text/css" href="jobs.css">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Kameron' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
 </head>
 
-<body>
+<body onload="findJob()">
 
 
   <!--add a fixed headbar linking to other pages-->
@@ -27,7 +28,6 @@
 
   <div class="sidenav">
     <div class="filters">
-      <input id="zipInput" class="ZIP" type="search" value ="" pattern="[0-9]{5}" placeholder=" ZIP Code" maxlength="5" onchange="findJob()">
       <span class="drop-down">
         <select id="jobTypeSelect" name="job-list" size="1" onclick="findJob()">
           <option value="job_type">All Job Types</option>
@@ -49,6 +49,7 @@
           <option value="college">Some College</option>
         </select>
       </div>
+      <input id="zipInput" class="ZIP" type="search" value ="" pattern="[0-9]{5}" placeholder=" ZIP Code" maxlength="5" onchange="findJob()">
     </div>
   </div>
 
@@ -64,7 +65,7 @@
       <div class="Title">General Construction Worker</div>
       <div class="Location">60115</div>
       <div class="Education">Some High School</div>
-      <div class="Description">Clean and prepare construction sites by removing debris, garbage, and trees. Load and unload building materials. Operate large powered machinery and equipment (e.g., saws, drills, grinders, blowtorches, pressure cleaners, jackhammers).</div>    
+      <div class="Description">Clean and prepare construction sites by removing debris, garbage, and trees. Load and unload building materials. Operate large powered machinery and equipment (e.g., saws, drills, grinders, blowtorches, pressure cleaners, jackhammers).</div>
     </div>
     <div class="job manufacturing diploma 60091">
       <div class="Title">Manufacturing Production Technician</div>
@@ -76,19 +77,19 @@
       <div class="Title">Trucking</div>
       <div class="Location">12345</div>
       <div class="Education">Some High School</div>
-      <div class=" Description">Driving the vehicle is the main responsibility of the commercial truck driver, but some also need to load and unload cargo. Long-haul truck drivers must maintain a logbook of their driving activities to ensure compliance with federal regulations governing the rest and work periods for operators. Drivers also keep a record of vehicle inspections and make sure the truck is equipped with safety equipment, such as hazardous material placards. Some long-haul truck drivers plan their route according to a delivery schedule. Local-delivery drivers may be required to sell products or services to stores and businesses on their route, obtain signatures from recipients and collect cash.</div>    
+       <div class=" Description">Driving the vehicle is the main responsibility of the commercial truck driver, but some also need to load and unload cargo. Long-haul truck drivers must maintain a logbook of their driving activities to ensure compliance with federal regulations governing the rest and work periods for operators. Drivers also keep a record of vehicle inspections and make sure the truck is equipped with safety equipment, such as hazardous material placards. Some long-haul truck drivers plan their route according to a delivery schedule. Local-delivery drivers may be required to sell products or services to stores and businesses on their route, obtain signatures from recipients and collect cash.</div>    
     </div>
     <div class="job customer_services diploma 60091">
       <div class="Title">Customer Service Representative</div>
       <div class="Location">60091</div>
       <div class="Education">High School Diploma</div>
-      <div class="Description">Resolve customer complaints via phone, email, mail, or social media. Use telephones to reach out to customers and verify account information. Greet customers warmly and ascertain problem or reason for calling. Assist with placement of orders, refunds, or exchanges.</div>    
+       <div class="Description">Resolve customer complaints via phone, email, mail, or social media. Use telephones to reach out to customers and verify account information. Greet customers warmly and ascertain problem or reason for calling. Assist with placement of orders, refunds, or exchanges.</div>    
     </div>
     <div class="job food_services highSchool 60091">
       <div class="Title">Food Preparation Worker</div>
       <div class="Location">60091</div>
       <div class="Education">Some High School</div>
-      <div class="Description">Perform a variety of food preparation duties other than cooking, such as preparing cold foods and shellfish, slicing meat, and brewing coffee or tea.</div>    
+     <div class="Description">Perform a variety of food preparation duties other than cooking, such as preparing cold foods and shellfish, slicing meat, and brewing coffee or tea.</div>    
     </div>
     <div class="job maintenance diploma 60091">
       <div class="Title">Custodian</div>
@@ -100,7 +101,7 @@
       <div class="Title">Data Entry Operator</div>
       <div class="Location">60091</div>
       <div class="Education">High School Diploma</div>
-      <div class="Description">Data entry operator responsibilities include collecting and entering data in databases and maintaining accurate records of valuable company information. Our ideal candidate has essential data entry skills, like fast typing with an eye for detail and familiarity with spreadsheets and online forms. You will work with a data team and data manager. Previous experience as a data entry clerk or similar position will be considered an advantage.</div>
+      <div class="Description">Data entry operator responsibilities include collecting and entering data in databases and maintaining accurate records of valuable company information. Our ideal candidate has essential data entry skills, like fast typing with an eye for detail and familiarity with spreadsheets and online forms.</div>
     </div>
     <div class="job office_work college 60091">
       <div class="Title">Secretary</div>
