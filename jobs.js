@@ -1,3 +1,5 @@
+var text;
+
 var jobTypeSelect = document.getElementById("jobTypeSelect");
 var educationTypeSelect = document.getElementById("educationTypeSelect");
 var zipNumSelect = document.getElementById("zipInput");
@@ -30,6 +32,13 @@ zipInput.onkeypress = function(e) {
   var key = e.which;
   if(e == 13) {
     findJob();
+  }
+}
+
+zip_landing.onkeypress = function(e) {
+  var key = e.which;
+  if(e == 13) {
+    zipNumSelect.value = getElementById("zip_landing");
   }
 }
 
