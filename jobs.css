@@ -1,5 +1,5 @@
 html {
-  background-color: #E7E6F7;
+  background-color: #F6F6F6;
   
 }
 
@@ -8,13 +8,14 @@ html {
   width: 250px;
   position: fixed;
   z-index: 1;
-margin-top: 75px;
+  margin-top: 75px;
   overflow-x: hidden;
   /*background-color: #E7E6F7;*/
   border-right-style:solid;
-  border-right-color: lightgray;
+  border-right-color: #C2FAF1;
   border-right-width: 1.5px;
   padding: 0px;
+  background-color: #C8F0FF; /*#E5F0F6; /*#C8F0FF; /*#E3E3E3; /*#DFEFF0; /*E7E6F7;*/
   /*margin: 5% auto;
  vertical-align: center;
   align-items: center;
@@ -34,7 +35,7 @@ margin-top: 75px;
     font: inherit;
     cursor: pointer;
     outline: inherit !important;
-    font-family: 'Kameron', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 
 }
 
@@ -42,8 +43,8 @@ margin-top: 75px;
   width:100%;
   position: fixed;
   top: 0px;
-  background-color: white;
-  font-family: 'Kameron', sans-serif;
+  background-color: #F6F6F6;
+  font-family: 'Source Sans Pro', sans-serif;
   /*border-style: solid;
   border-width: 1px;
   border-color: black;*/
@@ -53,12 +54,12 @@ margin-top: 75px;
   height: 10%;
   width: 100%;
   /*background-color: #273043;*/
-  background-color: #2191FB;
-  color:white;
+  background-color: /*#295E6A;*/ #2191FB;
+  color:#F6F6F6;
   /*color: #1B2845;*/
   display: table;
   margin: 0px auto;
-  font-family: 'Kameron', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   /*background: #1B2845;*/
   /*background-image:url(headerchoice.png);*/
   /*border-style:solid;
@@ -84,11 +85,33 @@ body {
   position: relative;
   left: 40px;
   font-size: 40px;
-  font-family: 'Kameron', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
   line-height: 70px;
-  color: #E7E6F7;
+  color: #C8F0FF;/*#DFEFF0;*/
 }
+/*
+.removebutton{
+  background-color: #F6F6F6;
+  border-width:1px;
+  border-color:#C2FAF1;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  height: 35px;
+}
+*/
 
+/*.filters{
+  float: left;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+*/
 
 .drop-down {
   position: relative;
@@ -103,17 +126,17 @@ body {
 }
 
 .drop-down select {
-  background-color: white;
-height: 35px;
+  height: 35px;
   width: 210px;
   color: black;
   font-size: inherit;
-  padding: .5em;
-  padding-right: 2.5em; 
+  /*padding: .5em;
+  padding-right: 2.5em; */
+  padding-bottom: 0;
   border-width: 1px;
-  border-color:lightgray;
-  margin-top: 25px;
-  border-radius: 10px;
+  border-color:#C2FAF1;
+  margin: 10% auto;
+  border-radius: 2.5px;
   text-indent: 0.01px;
   text-overflow: '';
   -webkit-appearance: button; 
@@ -156,52 +179,97 @@ height: 35px;
   width: 210px;
   font-size: inherit;
   border-width: 1px;
-  border-color:lightgray;
-  border-radius: 10px;
+  border-color: #C8F0FF; /*#C2FAF1;*/
+  border-radius: 4px;
   margin: 10% auto;
   margin-left:8%;
+  margin-top: 17%;
 }
 
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
 
 
 .job{  
-  padding-top:10px;
+  /*padding-top:10px;
   padding-bottom:10px;
-  padding-left:20px;
-  width:85%;
-  margin: auto;
+  padding-left:20px;*/
+  padding: 3%;
+  width:65%;
+  /*margin: auto;
   margin-top:15px;
-  margin-bottom: 15px;
-  background-color:white;
-  border-style:solid;
-  border-width: 1.5px;
-  border-color:lightgray;
-  border-radius: 10px;
-  font-family: "Open Sans";
+  margin-bottom: 15px;*/
+  margin:0 auto;
+  float: none;
+  background-color:#F6F6F6;
+  /*border-style:solid;
+  border-width: 1.5px 0px 1.5px 0px;
+  border-color:#C2FAF1;*/
+  /*border-radius: 10px;*/
+  font-family: "Open Sans", sans-serif;
+  overflow: auto;
+  padding-bottom: 0%;
 }
+
 .Title{
-  font-size:30px;
-  font-family: "Bitter";
+  float: left;
+  font-size:24px;
+  /*font-family: "Bitter";*/
   padding-bottom: 2px;
   display:inline-block;
+  margin-top: 0px;
 }
 .Description{  
   font-size:16px;
-  margin-bottom:15px;
-  padding: 3px;
+  float: left;
+  /*margin-bottom:15px;
+  padding: 3px;*/
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  border-color: #C8F0FF; /*#C2FAF1;*/
+  padding-bottom: 6%;
+  margin-bottom: 0px;
 }
+
 .Location{
-  font-family: "Bitter";
-  font-size:20px;
+  /*font-family: "Bitter";*/
+  /*clear: left;*/
+  font-size:15px;
+  /*float:left;*/
+  margin-bottom: 5%;
+
+  
   display:inline-block;
   padding-right:20px;
   float:right;
   line-height: 30px;
 }
 .Education{
-  font-family: "Bitter";
+  float: left;
+  /*font-family: "Bitter";*/
   font-size:15px;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
   font-style: italic;
+  /*margin-left: 20px;*/
+  clear: left;
 }
 
